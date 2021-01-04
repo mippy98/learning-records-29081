@@ -7,8 +7,9 @@ class Post < ApplicationRecord
     validates :title
     validates :conclusion
     validates :content
-    validates :study_time_id
+    validates :image
     validates :category_id, numericality:{ other_than: 1, message: "を選択してください"}
+    validates :study_time_id,numericality:{ other_than: 1, message: "を選択してください"}
   end
 
   extend ActiveHash::Associations::ActiveRecordExtensions

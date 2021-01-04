@@ -7,7 +7,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.integer    :study_time_id, null: false
       t.integer    :category_id,   null: false
       t.integer    :user_id,       null: false, foreign_key: false
-      t.integer    :comment_id,    null: false, foreign_key: false
+      t.integer    :comment_id,    foreign_key: false
       t.timestamps
     end
   end
