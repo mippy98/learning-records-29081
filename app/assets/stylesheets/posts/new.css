@@ -34,6 +34,10 @@
   margin-left: 300px;
 }
 
+.select-box {
+  width: 200px;
+  height: 30px;
+}
 
 .form-image {
   display: flex;
