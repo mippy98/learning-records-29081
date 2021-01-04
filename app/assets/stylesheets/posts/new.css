@@ -1,0 +1,51 @@
+
+.new-post {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid #dee7ec;
+  padding: 20px;
+}
+
+.form-input {
+  width: 1000px;
+  text-align: center;
+  margin:0 auto;
+}
+
+.form-title {
+  height: 30px;
+  width: 100%;
+  margin: 20px;
+}
+
+.form-conclusion {
+  height: 100px;
+  width: 100%;
+  margin: 20px;
+}
+
+.form-content {
+  height: 200px;
+  width: 100%;
+  margin: 20px;
+}
+
+.label-study-time {
+  margin-left: 300px;
+}
+
+
+.form-image {
+  display: flex;
+  margin-top: 20px;
+}
+
+.form-submit {
+  height: 50px;
+  width: 200px;
+  margin: 20px 40px;
+  
+}
+.field_with_errors {
+  display: contents;
+}
