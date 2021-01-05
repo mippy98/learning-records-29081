@@ -22,10 +22,7 @@
  
     <div class="form-image">
       <p>画像</p>
-      <div class="image-file">
-        <label for="file_photo">画像を選択してください</label>
-        <input type="file" id="file_photo">
-      </div>
+      <%= f.file_field :image, id:"item-image" %>
     </div>
 
   <%= f.submit '投稿する', class: 'submit-btn' %>
