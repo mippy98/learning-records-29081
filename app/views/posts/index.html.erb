@@ -41,14 +41,11 @@
       <h3 class='post-title'>
           <%= post.title %>
       </h3>
-    <%= link_to "#", method: :get do %>
+    <%= link_to post_path(post.id), method: :get do %>
       <div class='post-img-content'>
         <%= image_tag post.image, class: "post-img" %>
       </div>
     <% end %>
-      <div class='post-conclusion'>
-        <p><%= post.conclusion %></p>
-      </div>
     </li>
   <% end %>
 </div>
