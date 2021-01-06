@@ -1,5 +1,5 @@
 <div class="show-post-date">
-  <div class="post-category">カテゴリー: <%= @post.category.name %></div>
+  <div class="post-category">カテゴリー : <%= @post.category.name %></div>
   <div class="post-date"><%= @post.created_at.strftime('%Y/%m/%d') %></div>
 </div>
 
@@ -22,11 +22,17 @@
       <%= @post.content %>
     </div>
 
-    <% if user_signed_in? %>
-      <% if current_user.id == @post.user_id %>
-      <%= link_to '編集', "#", method: :get, class: "post-edit-btn" %>
-      <%= link_to '削除', "#", method: :delete, class:'post-destroy-btn' %>
+    <div class="study-time">
+      <p>学習時間 : <%= @post.study_time.name %></p>
+    </div>
+
+    <div class="post-btn">
+      <% if user_signed_in? %>
+        <% if current_user.id == @post.user_id %>
+        <%= link_to '編集', "#", method: :get, class: "post-edit-btn" %>
+        <%= link_to '削除', "#", method: :delete, class:'post-destroy-btn' %>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
 
      <%= link_to '戻る', root_path, class:'post-back-btn' %>
