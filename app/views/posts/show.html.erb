@@ -1,0 +1,32 @@
+<div class="show-post-date">
+  <div class="post-category">カテゴリー: <%= @post.category.name %></div>
+  <div class="post-date"><%= @post.created_at.strftime('%Y/%m/%d') %></div>
+</div>
+
+<div class="post-show">
+  <div class="post-box">
+    <div class="title">
+      <%= @post.title %>
+    </div>
+    <div class='post-img-content'>
+      <%= image_tag @post.image ,class:"post-box-img" %>
+    </div>
+
+
+    <div class="post-explain-box">
+      <span class="box-title">結論</span>
+      <p><%= @post.conclusion %></p>
+    </div>
+
+    <div class="content">
+      <%= @post.content %>
+    </div>
+
+    <% if user_signed_in? %>
+      <% if current_user.id == @post.user_id %>
+      <%= link_to '編集', "#", method: :get, class: "post-edit-btn" %>
+      <%= link_to '削除', "#", method: :delete, class:'post-destroy-btn' %>
+      <% end %>
+    <% end %>
+
+     <%= link_to '戻る', root_path, class:'post-back-btn' %>

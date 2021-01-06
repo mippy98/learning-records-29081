@@ -1,0 +1,132 @@
+.show-post-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  position: relative;
+  padding: 0 0 10px 20px;
+  border-bottom: 1px solid #000;
+  font-size: 30px;
+  }
+   
+.title::after {
+  position: absolute;
+  content: '';
+  top: 4px;
+  left:0;
+  width: 5px;
+  height:25px;
+  background-color: #000fff;
+  }
+
+.post-img-content {
+  margin-top: 30px;
+}
+
+.post-explain-box {
+  position: relative;
+  margin: 2em 0;
+  padding: 25px 10px 7px;
+  border: solid 2px #FFC107;
+}
+
+.post-explain-box .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -2px;
+  left: -2px;
+  padding: 0 9px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 17px;
+  background: #FFC107;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.post-explain-box p {
+  margin: 0; 
+  padding: 0;
+}
+
+.content {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  border: solid 2px #200000;
+  font-size: 17px;
+}
+
+.content p {
+  margin: 0; 
+  padding: 0;
+}
+
+.post-show {
+  background-color: #f8f8f8;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0;
+}
+
+.post-box {
+  background-color: #FFF;
+  width: 70vw;
+  min-width: 1200px;
+  padding: 10vh 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-box>.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.post-box-img {
+  height: 50vh;
+  width: 60vw;
+  min-height: 500px;
+  background-color: #ffffff;
+  object-fit: contain;
+}
+
+.post-edit-btn {
+  text-align: center;
+  background-color: orange;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 20px 0px;
+  padding: 2vh 8vw;
+}
+
+.post-destroy-btn {
+  text-align: center;
+  background-color: lightgreen;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 20px 0px;
+  padding: 2vh 8vw;
+}
+
+.post-explain-box {
+  font-size: 18px;
+  margin: 40px 0px;
+}
+
+.post-back-btn {
+  background-color: lightgray;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  margin: 20px 0px;
+  padding: 2vh 2vw;
+
+}
+
