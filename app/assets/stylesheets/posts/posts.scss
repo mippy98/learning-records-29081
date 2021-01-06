@@ -110,5 +110,30 @@
 .contents h1 {
   border-bottom: 2px solid #dee7ec;
   text-align: center;
-  margin: 50px;
+}
+
+.contents{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.post-title{
+  margin-top: 100px;
+  font-weight: bolder;
+}
+
+.post-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-img-content {
+  position: relative;
+}
+  
+.post-img {
+  width: 70vh;
+  height: 33vh;
 }
