@@ -64,7 +64,7 @@ Things you may want to cover:
 | --------- | ------- | ------------------------------ |
 | user_id   | integer | null: false, foreign_key: true |
 | post_id   | integer | null: false, foreign_key: true |
-| comment   | text    | null: false                    |
+| text      | text    | null: false                    |
 
 ### Association
 
