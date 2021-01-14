@@ -1,0 +1,32 @@
+<header class="top-page-header">
+  <div class="search-bar-contents">
+    <div class="header-logo">Learning Records</div>
+    <%= form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form| %>
+    <%= form.text_field :keyword, placeholder: "キーワードから検索する", class: "input-box" %>
+    <%= form.submit "検索", class: "search-btn" %>
+    <% end %>
+  </div>
+
+  <div class="nav">
+    <div class="list-left">
+      <%= link_to 'New Post', new_post_path %>
+    </div>
+    <ul class="lists-right">
+    <% if user_signed_in? %>
+        <li><%= link_to current_user.name, "#", class: "user-name" %></li>
+        <li><%= link_to 'Sign Out', destroy_user_session_path , method: :delete, class: "logout" %></li>
+      </div>
+    <% else %>
+        <li><%= link_to 'Log In', new_user_session_path, class: "login" %></li>
+        <li><%= link_to 'Sign Up', new_user_registration_path, class: "sign-up" %></li>
+      </div>
+    <% end %>
+    </ul>
+  </div>
+</header>
+
+<div class="main">
+  <div class="main-image">
+    <%= image_tag 'study.jpg', size:'1000x400' %>
+  </div>
+</div>
