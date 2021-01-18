@@ -9,7 +9,7 @@
       <%= @post.title %>
     </div>
     <div class='post-img-content'>
-      <%= image_tag @post.image ,class:"post-box-img" %>
+      <%= image_tag @post.image, :width => '100%', :height => '100%'  %>
     </div>
 
 
@@ -47,13 +47,13 @@
     </div>
 
     <div class="comments">
-    <h4>＜コメント一覧＞</h4>
-    <% @comments.each do |comment| %>
-      <p>
-        <strong><%= link_to comment.user.name, "/users/#{comment.user_id}" %>：</strong>
-        <%= comment.text %>
-      </p>
-    <% end %>
+      <h4>＜コメント一覧＞</h4>
+        <% @comments.each do |comment| %>
+          <p>
+            <strong><%= link_to comment.user.name, "/users/#{comment.user_id}" %>：</strong>
+            <%= comment.text %>
+          </p>
+        <% end %>
     </div>
 
     <%= link_to '戻る', root_path, class:'post-back-btn' %>

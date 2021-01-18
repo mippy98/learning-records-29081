@@ -1,5 +1,5 @@
-<div class ="new-post">投稿内容</div>
-
+<div class ="new-post">
+  <h1>投稿内容</h1>
 
 <%= form_with model: @post, class: 'form', local: true do |f| %>
 <%= render 'shared/error_messages', model: f.object %>
@@ -11,7 +11,7 @@
     <p><label>結論</label></p>
     <%= f.text_area :conclusion, class: 'form-conclusion' %>
 
-    <p><label>内容</label><p>
+    <p><label>内容</label></p>
     <%= f.text_area :content, class: 'form-content' %>
 
     <p>カテゴリー</p>
@@ -22,7 +22,7 @@
  
     <div class="form-image">
       <p>画像</p>
-      <%= f.file_field :image, id:"item-image" %>
+      <%= f.file_field :image, id:"post-image" %>
     </div>
 
   <%= f.submit '投稿する', class: 'submit-btn' %>
@@ -30,5 +30,4 @@
   <p><%= link_to '戻る', root_path, class: 'post-back-btn' %></p>
   </div>
 <% end %>
-
 </div>
