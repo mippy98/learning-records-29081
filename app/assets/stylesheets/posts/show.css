@@ -127,23 +127,35 @@
 }
 
 .post-edit-btn {
-  text-align: center;
-  background-color: orange;
-  font-size: 24px;
-  font-weight: bold;
+  display: inline-block;
+  padding: 20px 50px;
+  text-decoration: none;
+  color: #67c5ff;
+  border: dashed 1px #67c5ff;
+  background: #f2fcff;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.post-edit-btn:hover {
+  background: #cbedff;
   color: #FFF;
-  margin: 20px;
-  padding: 2vh 8vw;
 }
 
 .post-destroy-btn {
-  text-align: center;
-  background-color: lightgreen;
-  font-size: 24px;
-  font-weight: bold;
+  display: inline-block;
+  padding: 20px 50px;
+  text-decoration: none;
+  color: #67c5ff;
+  border: dashed 1px #67c5ff;
+  background: #f2fcff;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.post-destroy-btn:hover {
+  background: #cbedff;
   color: #FFF;
-  margin: 20px;
-  padding: 2vh 8vw;
 }
 
 .post-explain-box {
@@ -151,23 +163,13 @@
   margin: 40px 0px;
 }
 
-.post-back-btn {
-  background-color: lightgray;
-  text-align: center;
-  font-size: 14px;
-  color: black;
-  margin: 20px;
-  padding: 2vh 2vw;
-  margin-top: 80px;
-}
-
-
 .container {
-  margin: 20px 0;
+  margin: 20px;
   padding: 30px;
-  background-color: white;
+  background-color: white
   box-sizing: border-box;
   text-align: center;
+
 }
 
 .comment-text-box {
@@ -185,16 +187,17 @@
   font-size: 13px;
   padding: 10px;
   height: 80px;
-  width: 800px;
+  width: 60vw;
   margin-top: 100px;
 }
 
 .comment-send-btn {
-  color: #fff;
+  color:black;
   cursor: pointer;
   font-size: 14px;
   height: 40px;
-  width: 800px;
+  width: 60vw;
+  
 }
 
 .comments {
@@ -213,6 +216,6 @@
   font-size: 15px;
   padding: 10px;
   height: 200px;
-  width: 800px;
+  width: 60vw;
   text-align: left;
 }

@@ -10,7 +10,7 @@
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin: 0 auto;
+  margin: 40px 0 0 0;
 }
 
 .form-input {
@@ -94,13 +94,21 @@
   margin: 20px 0;
 }
 
-.back-btn {
-  background: #B4B4B4 url(/stylerecipe_img/arrow_gray.png) no-repeat;
-  background-position: 20px;
-  color: #7E7E7E;
-  cursor: default;
-  height: 200px;
-  width: 180px;
+.post-back-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: slategrey;
+  border: dashed 1px slategrey;
+  background: #f2fcff;
+  border-radius: 3px;
+  transition: .4s;
+  font-size: 12px;
+}
+
+.post-back-btn:hover {
+  background: slategrey;
+  color: #FFF;
 }
 
 .submit-btn {
