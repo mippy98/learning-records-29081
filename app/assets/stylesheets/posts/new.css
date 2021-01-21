@@ -96,41 +96,37 @@
 
 .post-back-btn {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 10px 30px;
   text-decoration: none;
-  color: slategrey;
-  border: dashed 1px slategrey;
-  background: #f2fcff;
+  color: gray;
+  border: dashed 1px gray;
   border-radius: 3px;
   transition: .4s;
-  font-size: 12px;
+  font-size: 15px;
+  margin-top: 50px;
 }
 
 .post-back-btn:hover {
-  background: slategrey;
-  color: #FFF;
+  border-style: dotted;
+  color: darkgrey;
+
 }
 
 .submit-btn {
-  background: #1B73BA url(/stylerecipe_img/arrow_white.png) no-repeat;
-  background-position: 20px;
-  border: none;
-  border-radius: 2px;
-  transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  -webkit-transition: 0.2s ease-in-out;
-  box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
-  -o-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
-  -ms-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
-  color: #fff;
-  cursor: pointer;
-  font-size: 14px;
-  height: 50px;
-  width: 180px;
-  margin: 100px 0 50px 0;
+  display: inline-block;
+  padding: 15px 60px;
+  text-decoration: none;
+  color: #67c5ff;
+  border: dashed 1px #67c5ff;
+  background: #f2fcff;
+  border-radius: 3px;
+  transition: .4s;
+  margin-top: 50px;
+}
+
+.submit-btn:hover {
+  background: #cbedff;
+  color: #FFF;
 }
 
 .form-image {
