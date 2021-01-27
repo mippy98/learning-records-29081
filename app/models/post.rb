@@ -1,13 +1,13 @@
 class Post < ApplicationRecord
   belongs_to :user
   has_many :comments
-  has_one_attached :image
+  has_many_attached :images
 
   with_options presence: true do
     validates :title
     validates :conclusion
     validates :content
-    validates :image
+    validates :images
     validates :category_id, numericality:{ other_than: 1, message: "を選択してください"}
     validates :study_time_id,numericality:{ other_than: 1, message: "を選択してください"}
   end
