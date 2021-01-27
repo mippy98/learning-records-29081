@@ -20,3 +20,5 @@
 <div class="page">
   <%= paginate @posts %>
 </div>
+
+<%= render partial: "footer", locals: { post: @posts } %>
