@@ -1,7 +1,7 @@
 <%= render partial: "header", locals: { post: @posts } %>
 
 <div class="contents">
-  <h1>Post List</h1>
+  <h1>投稿一覧</h1>
   <ul class='post-lists'>
 
   <% @posts.each do |post| %>
@@ -9,15 +9,14 @@
       <h3 class='post-title'>
           <%= post.title %>
       </h3>
+    <%= link_to post_path(post.id), method: :get do %>
       <div class='post-img-content'>
-        <%= link_to post_path(post.id), method: :get do %>
-        <%= image_tag post.image, class: "post-img" %>
-        <% end %>
+        <%= image_tag post.images[0], class: "post-img" %>
       </div>
-    </li> 
+    <% end %>
+    </li>
   <% end %>
 </div>
-
 <div class="page">
   <%= paginate @posts %>
 </div>

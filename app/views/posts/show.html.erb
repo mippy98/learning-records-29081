@@ -8,9 +8,15 @@
     <div class="title">
       <%= @post.title %>
     </div>
+
     <div class='post-img-content'>
-      <%= image_tag @post.image, :width => '100%', :height => '100%'  %>
+      <% if @post.images.attached? %>
+      <% @post.images.each do |image| %>
+        <%= image_tag image, :width => '80%', :height => '60%', class: 'post-images' %> <br>
+        <% end %>
+      <% end %>
     </div>
+  </div>
 
 
     <div class="post-explain-box">
