@@ -170,10 +170,9 @@ padding: 20px;
 .container {
   margin: 20px;
   padding: 30px;
-  background-color: white
+  background-color: white;
   box-sizing: border-box;
   text-align: center;
-
 }
 
 .comment-text-box {
