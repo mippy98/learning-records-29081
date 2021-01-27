@@ -1,5 +1,6 @@
-<div class ="edit-post">投稿内容編集</div>
+<%= render partial: "header", locals: { post: @posts } %>
 
+<div class ="edit-post">投稿内容編集</div>
 
 <%= form_with model: @post, class: 'form', local: true do |f| %>
 <%= render 'shared/error_messages', model: f.object %>

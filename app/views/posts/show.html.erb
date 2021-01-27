@@ -1,3 +1,5 @@
+<%= render partial: "header", locals: { post: @posts } %>
+
 <div class="show-post-date">
   <div class="post-category">カテゴリー : <%= @post.category.name %></div>
   <div class="post-date"><%= @post.created_at.strftime('%Y/%m/%d') %></div>
