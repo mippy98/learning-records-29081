@@ -51,12 +51,12 @@
   color: #000fff;
 }
 
-.post-img-content {
-  height: auto;
+.show-post-img-content {
+  text-align: center;
 }
 
-.post-images {
-padding: 20px;
+.show-post-images {
+  padding: 50px ;
 
 }
 
