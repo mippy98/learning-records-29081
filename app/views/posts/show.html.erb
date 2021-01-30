@@ -14,7 +14,7 @@
     <div class='show-post-img-content'>
       <% if @post.images.attached? %>
       <% @post.images.each do |image| %>
-        <%= image_tag image, :width => '60%', :height => '40%', class: 'show-post-images' %> <br>
+        <%= image_tag image,  class: 'show-post-images' %> <br>
         <% end %>
       <% end %>
     </div>
