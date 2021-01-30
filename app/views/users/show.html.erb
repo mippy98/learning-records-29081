@@ -1,12 +1,13 @@
-
-
-<div class="mypage">
+<%= render partial: "posts/header", locals: { post: @posts } %>
+  
+  <div class="mypage">
   <div class="post-user-name"><%= @name %>さんの投稿一覧</div>
   <% @posts.each do |post| %>
     <li class='list'>
       <h3 class='post-title'>
           <%= post.title %>
       </h3>
+      
     <%= link_to post_path(post.id), method: :get do %>
       <div class='post-img-content'>
         <%= image_tag post.images[0], class: "post-img" %>
@@ -16,3 +17,4 @@
   <% end %>
 </div>
 
+<%= render partial: "posts/footer", locals: { post: @posts } %>
