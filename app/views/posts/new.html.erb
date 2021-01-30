@@ -25,12 +25,8 @@
     <div class="form-image">
       <p>画像</p>
       <%= f.file_field :images, name: 'post[images][]', id:"post-image",  multiple: true %>
-      <div id="image-list"></div>
+      <div id="image-list",></div>
     </div>
-
-    <% @post.images.each do |image| %>
-      <%= image_tag image, class: 'images' %>
-    <% end %>
 
   <%= f.submit '投稿する', class: 'submit-btn' %>
 

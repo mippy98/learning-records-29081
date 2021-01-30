@@ -9,6 +9,8 @@ if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
 
       const blobImage = document.createElement('img')
       blobImage.setAttribute('src', blob)
+      blobImage.setAttribute("width","500")
+      blobImage.setAttribute("height","300")
   
           const inputHTML = document.createElement('input')
           inputHTML.setAttribute('id', `post-image_${imageElementNum}`)
