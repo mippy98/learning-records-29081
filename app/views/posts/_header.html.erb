@@ -13,7 +13,7 @@
     </div>
     <ul class="lists-right">
     <% if user_signed_in? %>
-        <li><%= link_to current_user.name, "#", class: "user-name" %></li>
+        <li><%= link_to current_user.name, user_path(current_user), class: "user-name" %></li>
         <li><%= link_to 'Sign Out', destroy_user_session_path , method: :delete, class: "logout" %></li>
       </div>
     <% else %>
@@ -27,6 +27,6 @@
 
 <div class="main">
   <div class="main-image">
-    <%= image_tag 'study.jpg', size:'1000x400' %>
+    <%= image_tag 'study.jpg', :width => '70%', :height => '350px' %>
   </div>
 </div>
