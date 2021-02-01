@@ -2,7 +2,7 @@ lock '3.15.0'
 
 set :application, 'learning-records-29081'
 
-set :repo_url,  'git@github.com:xxmippy98xx/learning-records-29081.git'
+set :repo_url,  'git@github.com:mippy98/learning-records-29081.git'
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
