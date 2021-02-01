@@ -1,6 +1,8 @@
 <%= render partial: "header", locals: { post: @posts } %>
 
 <div class="contents">
+  <h1>検索結果</h1>
+
   <ul class='post-lists'>
   <% @posts.each do |post| %>
     <li class='list'>
