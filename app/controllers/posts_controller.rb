@@ -3,8 +3,7 @@ class PostsController < ApplicationController
   before_action :set_post, only:[:show, :edit]
 
   def index
-    @posts = Post.all.order("created_at DESC")
-    @posts = Post.all.page(params[:page]).per(10)
+    @posts = Post.order("created_at DESC").page(params[:page]).per(10)
   end
 
   def new
