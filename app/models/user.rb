@@ -12,4 +12,12 @@ class User < ApplicationRecord
     validates :email, uniqueness: {case_sensitive: false}, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i }
     validates :password, confirmation: true, length: { minimum: 6 } 
   end
+
+  def self.guest
+    find_or_create_by!(email: 'guest@example.com') do |user|
+      user.name = "ゲストユーザー"
+      user.password = SecureRandom.urlsafe_base64
+      #user.confirmed_at = Time.now  
+    end
+  end
 end

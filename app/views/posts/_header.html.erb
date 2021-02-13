@@ -9,16 +9,17 @@
 
   <div class="nav">
     <div class="list-left">
-      <%= link_to 'New Post', new_post_path, class:"new-post" %>
+      <%= link_to '新規投稿', new_post_path, class:"new-post" %>
     </div>
     <ul class="lists-right">
     <% if user_signed_in? %>
         <li><%= link_to current_user.name, user_path(current_user), class: "user-name" %></li>
-        <li><%= link_to 'Sign Out', destroy_user_session_path , method: :delete, class: "logout" %></li>
+        <li><%= link_to 'サインアウト', destroy_user_session_path , method: :delete, class: "logout" %></li>
       </div>
     <% else %>
-        <li><%= link_to 'Log In', new_user_session_path, class: "login" %></li>
-        <li><%= link_to 'Sign Up', new_user_registration_path, class: "sign-up" %></li>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+        <li><%= link_to 'ゲストログイン', users_guest_sign_in_path, method: :post, class: "guest-login" %>
       </div>
     <% end %>
     </ul>
